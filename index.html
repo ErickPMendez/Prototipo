@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo.png" id="logo" width="100" >
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito" width="50" >
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>Crealo a tu gusto!</h2>
+                                <p>Todos los componentes que puedas imaginar</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría comprar?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>Componentes de la mejor calidad <br><br>
+                        Explora  las marcas más recientes</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Asesoria en tienda física <br><br>
+                        Aprende con nuestro personal</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Distintas marcas a para tus gustos <br><br>
+                        Tu decides la mejor opcion</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Componentes Disponibles</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso1.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Tarjeta de video nvidia 1660 Super</h4>
+                        <p>Tarjeta de video</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">Q3,985.00  <span class="u-pull-right ">Q3,450.00</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Procesador Intel i5 Decima Generación</h4>
+                            <p>Procesador</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">Q1,700.00  <span class="u-pull-right ">Q1,500.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Memoria Ram ddr4 Corsair 2x16gb</h4>
+                            <p>Ram</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">Q1,521.00  <span class="u-pull-right ">Q1,435.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso4.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Jonsbo Mod 3 Mecha Theme</h4>
+                        <p>Case</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">Q3,000.00  <span class="u-pull-right ">Q2,500.00</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso5.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Asus Prime B365M-A</h4>
+                            <p>MotherBoard</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">Q1,000.00  <span class="u-pull-right ">Q850.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso6.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Razer Viper Mini</h4>
+                            <p>Mouse</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">Q550.00  <span class="u-pull-right ">Q400.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso7.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>EVGA 550w</h4>
+                        <p>Fuente de poder</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">Q935.00  <span class="u-pull-right ">Q825.00</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso8.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>ASUS 23.8" GAMING VP249QGR</h4>
+                            <p>Monitor Led</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">Q1880.00  <span class="u-pull-right ">Q1,530.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso9.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Procesador AMD Ryzen 5 3600</h4>
+                            <p>Procesador</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">Q2,870.00  <span class="u-pull-right ">Q2,755.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso10.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>SSD Kingston de 240gb</h4>
+                            <p>Almacenamiento</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">Q349.00  <span class="u-pull-right ">Q325.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/curso11.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Redragon Visnu</h4>
+                                <p>Teclados</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">Q400.00  <span class="u-pull-right ">Q345.00</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/curso12.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>HyperX Cloud II</h4>
+                                <p>Auriculares</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">Q849.00  <span class="u-pull-right ">Q739.00</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Para tu Negocio</a>
+                                <a class="enlace" href="#">Conviertete en Instructor</a>
+                                <a class="enlace" href="#">Aplicaciones Móviles</a>
+                                <a class="enlace" href="#">Soporte</a>
+                                <a class="enlace" href="#">Temas</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
